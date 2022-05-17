@@ -81,6 +81,7 @@ function DashboardContent() {
           <Toolbar
             sx={{
               pr: '24px', // keep right padding when drawer closed
+              justifyContent:'space-between'
             }}
           >
             <IconButton
@@ -100,9 +101,8 @@ function DashboardContent() {
               variant="h6"
               color="inherit"
               noWrap
-              sx={{ flexGrow: 1 }}
             >
-              Dashboard
+              Amigo Secreto
             </Typography>
             <IconButton color="inherit">
               <Badge badgeContent={4} color="secondary">
@@ -119,7 +119,16 @@ function DashboardContent() {
               justifyContent: 'flex-end',
               px: [1],
             }}
-          >
+          > 
+            <Typography
+              component="h1"
+              variant="h6"
+              color="inherit"
+              noWrap
+              sx={{ flexGrow: 1 }}
+            >
+              Amigo Secreto
+            </Typography>
             <IconButton onClick={toggleDrawer}>
               <ChevronLeftIcon />
             </IconButton>
