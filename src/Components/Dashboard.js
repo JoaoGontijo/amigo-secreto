@@ -161,7 +161,7 @@ function DashboardContent() {
                     height: 240,
                   }}
                 >
-                  <span>Teste</span>
+                  <h2>Meus Sorteios</h2>
                 </Paper>
               </Grid>
 
@@ -173,7 +173,7 @@ function DashboardContent() {
                     height: 240,
                   }}
                 >
-                  <span>Teste</span>
+                  <h2>Sorteios que participo</h2>
                 </Paper>
               </Grid>
             </Grid>
