@@ -8,6 +8,7 @@ function Router() {
     <BrowserRouter>
       <Routes>
         <Route index element={<Home />} />
+        <Route path="/dashboard" element={<Dashboard />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
