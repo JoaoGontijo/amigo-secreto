@@ -13,11 +13,13 @@ import Badge from '@mui/material/Badge';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
-import Link from '@mui/material/Link';
 import MenuIcon from '@mui/icons-material/Menu';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import NotificationsIcon from '@mui/icons-material/Notifications';
+
 import MenuList from './MenuList';
+import UserDraw from '../Modules/UserDraw';
+import UserBets from '../Modules/UserBets';
 
 const drawerWidth = 240;
 
@@ -153,27 +155,11 @@ function DashboardContent() {
           <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
             <Grid container spacing={3} sx={{ display:'flex', flexWrap: 'nowrap'}}>
               <Grid item xs={12} md={8} lg={9}>
-                <Paper
-                  sx={{
-                    p: 2,
-                    display: 'flex',
-                    height: 240,
-                  }}
-                >
-                  <h2>Meus Sorteios</h2>
-                </Paper>
+                <UserDraw />
               </Grid>
 
               <Grid item xs={12} md={8} lg={9}>
-                <Paper
-                  sx={{
-                    p: 2,
-                    display: 'flex',
-                    height: 240,
-                  }}
-                >
-                  <h2>Sorteios que participo</h2>
-                </Paper>
+                <UserBets />
               </Grid>
             </Grid>
           </Container>
