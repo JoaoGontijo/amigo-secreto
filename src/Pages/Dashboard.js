@@ -2,7 +2,9 @@ import DashboardUI from "../Components/Dashboard"
 
 const Dashboard = () => {
   return (
-   <div><DashboardUI/></div>
+   <div>
+     <DashboardUI/>
+    </div>
   );
 }
 
